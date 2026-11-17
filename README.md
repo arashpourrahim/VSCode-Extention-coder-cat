@@ -11,10 +11,9 @@
 ## Features
 
 - Shows Coder Cat automatically on the first activation after installation.
-- Displays a bundled animated cat GIF with colorful disco effects.
+- Displays the bundled animated cat GIF by itself, without decorative frames or background effects.
 - Closes the dance view automatically after five seconds.
 - Provides a command for replaying the animation whenever you want.
-- Adapts its background to the active VS Code theme.
 - Runs locally without scripts, network requests, telemetry, or data collection.
 
 ## Installation
@@ -30,7 +29,7 @@
 You can also install the package from a terminal:
 
 ```bash
-code --install-extension coder-cat-0.1.2.vsix
+code --install-extension coder-cat-0.1.3.vsix
 ```
 
 ## Usage
@@ -86,10 +85,10 @@ Coder Cat does not collect, store, or transmit personal information. The extensi
 
 ## Release notes
 
-### 0.1.2
+### 0.1.3
 
-- Replaced the static JPEG dance image with an animated GIF.
-- Reduced the packaged extension size by removing the obsolete JPEG asset.
+- Simplified the dance view to display only the original animated GIF.
+- Removed all decorative backgrounds, circles, frames, shadows, and CSS motion effects.
 
 See [CHANGELOG.md](CHANGELOG.md) for the complete release history.
 

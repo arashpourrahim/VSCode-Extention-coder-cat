@@ -3,7 +3,7 @@
   "publisher": "arashpourrahim",
   "displayName": "Coder Cat",
   "description": "A playful coding cat that dances in VS Code for five seconds after installation. 😸",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "icon": "media/coder-cat-icon.png",
   "repository": {
     "type": "git",
