@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-11-17
+
+### Changed
+
+- Replaced the static JPEG dance image with an animated GIF.
+- Removed the obsolete JPEG asset from the extension package.
+
 ## [0.1.1] - 2026-11-17
 
 ### Added
@@ -42,7 +49,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Added automatic first-run playback and the manual dance command.
 - Added CSS dance and disco effects using the bundled cat photo.
 
-[Unreleased]: https://github.com/arashpourrahim/disco-cat/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/arashpourrahim/disco-cat/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/arashpourrahim/disco-cat/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/arashpourrahim/disco-cat/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/arashpourrahim/disco-cat/compare/v0.0.2...v0.1.0
 [0.0.2]: https://github.com/arashpourrahim/disco-cat/compare/v0.0.1...v0.0.2

@@ -34,7 +34,7 @@ function showDancingCat(context: vscode.ExtensionContext): void {
 	);
 
 	const imageUri = dancePanel.webview.asWebviewUri(
-		vscode.Uri.joinPath(mediaDirectory, 'malous.JPG'),
+		vscode.Uri.joinPath(mediaDirectory, 'disco-cat-dance.gif'),
 	);
 	dancePanel.webview.html = getWebviewContent(dancePanel.webview, imageUri);
 
