@@ -1,9 +1,9 @@
 {
-  "name": "disco-cat",
+  "name": "coder-cat",
   "publisher": "arashpourrahim",
-  "displayName": "Disco Cat",
-  "description": "A playful cat that dances in VS Code for five seconds after installation. 😸",
-  "version": "0.0.2",
+  "displayName": "Coder Cat",
+  "description": "A playful coding cat that dances in VS Code for five seconds after installation. 😸",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/arashpourrahim/disco-cat.git"
@@ -16,15 +16,15 @@
   ],
   "activationEvents": [
     "onStartupFinished",
-    "onCommand:disco-cat.dance"
+    "onCommand:coder-cat.dance"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "disco-cat.dance",
-        "title": "Disco Cat: Dance!",
-        "category": "Disco Cat"
+        "command": "coder-cat.dance",
+        "title": "Coder Cat: Dance!",
+        "category": "Coder Cat"
       }
     ]
   },

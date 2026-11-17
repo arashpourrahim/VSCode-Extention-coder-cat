@@ -1,13 +1,13 @@
 import * as vscode from 'vscode';
 
 const danceDurationMs = 5_000;
-const hasDancedOnFirstRunKey = 'disco-cat.hasDancedOnFirstRun';
+const hasDancedOnFirstRunKey = 'coder-cat.hasDancedOnFirstRun';
 
 let dancePanel: vscode.WebviewPanel | undefined;
 let closeTimer: NodeJS.Timeout | undefined;
 
 export function activate(context: vscode.ExtensionContext) {
-	const danceCommand = vscode.commands.registerCommand('disco-cat.dance', () => {
+	const danceCommand = vscode.commands.registerCommand('coder-cat.dance', () => {
 		showDancingCat(context);
 	});
 
@@ -24,8 +24,8 @@ function showDancingCat(context: vscode.ExtensionContext): void {
 
 	const mediaDirectory = vscode.Uri.joinPath(context.extensionUri, 'media');
 	dancePanel = vscode.window.createWebviewPanel(
-		'discoCatDance',
-		'Disco Cat',
+		'coderCatDance',
+		'Coder Cat',
 		vscode.ViewColumn.Active,
 		{
 			enableScripts: false,
@@ -59,7 +59,7 @@ function getWebviewContent(webview: vscode.Webview, imageUri: vscode.Uri): strin
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Security-Policy" content="${csp}">
-	<title>Disco Cat</title>
+	<title>Coder Cat</title>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -141,8 +141,8 @@ function getWebviewContent(webview: vscode.Webview, imageUri: vscode.Uri): strin
 	</style>
 </head>
 <body>
-	<main class="stage" aria-label="A dancing disco cat">
-		<img class="cat" src="${imageUri}" alt="Disco Cat dancing">
+	<main class="stage" aria-label="A dancing coder cat">
+		<img class="cat" src="${imageUri}" alt="Coder Cat dancing">
 	</main>
 </body>
 </html>`;
