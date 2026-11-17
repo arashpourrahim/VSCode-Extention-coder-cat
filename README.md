@@ -1,34 +1,98 @@
-# Coder Cat
+<p align="center">
+  <img src="media/coder-cat-icon.png" width="128" height="128" alt="Coder Cat icon">
+</p>
 
-Coder Cat brings a dancing programmer cat to the center of your VS Code editor for five seconds on the first run after installation.
+<h1 align="center">Coder Cat</h1>
+
+<p align="center">
+  A playful coding cat that celebrates inside VS Code with a five-second dance. 😸
+</p>
 
 ## Features
 
-- Automatically dances once, on the first activation after installation.
-- Closes itself after five seconds.
-- Uses the **Coder Cat: Dance!** command when you want an encore.
-- Respects VS Code themes and reduced-motion preferences.
+- Shows Coder Cat automatically on the first activation after installation.
+- Animates a real cat photo with colorful disco effects.
+- Closes the dance view automatically after five seconds.
+- Provides a command for replaying the animation whenever you want.
+- Adapts its background to the active VS Code theme.
+- Runs locally without scripts, network requests, telemetry, or data collection.
 
-## Try it locally
+## Installation
 
-1. Run `npm install`.
-2. Press `F5` in VS Code to open an Extension Development Host.
-3. If the first-run dance has already been recorded, open the Command Palette and run **Coder Cat: Dance!**.
+### Install from a VSIX file
 
-## Build
+1. Open the Extensions view in VS Code.
+2. Select the **...** menu in the top-right corner.
+3. Select **Install from VSIX...**.
+4. Choose the latest `coder-cat-*.vsix` file.
+5. Run **Developer: Reload Window** if VS Code asks you to reload.
 
-Run `npm run compile` for a development build or `npm run package` for a production build.
+You can also install the package from a terminal:
+
+```bash
+code --install-extension coder-cat-0.1.1.vsix
+```
+
+## Usage
+
+Coder Cat dances automatically once, on the first activation after installation. To replay the animation:
+
+1. Open the Command Palette with `Cmd+Shift+P` on macOS or `Ctrl+Shift+P` on Windows and Linux.
+2. Search for **Coder Cat: Dance!**.
+3. Select the command and enjoy the dance.
+
+> **Note:** `Coder Cat: Dance!` is a VS Code command, not a shell command. Run it from the Command Palette rather than the terminal.
+
+## Commands
+
+| Command | Command ID | Description |
+| --- | --- | --- |
+| **Coder Cat: Dance!** | `coder-cat.dance` | Displays Coder Cat for five seconds. |
+
+## Requirements
+
+- VS Code `1.85.0` or newer.
+- No external dependencies or configuration are required.
+
+## Extension settings
+
+Coder Cat does not currently contribute any settings.
+
+## Development
+
+```bash
+npm install
+npm run compile
+npm test
+```
+
+Press `F5` in VS Code to launch an Extension Development Host. If the automatic first-run dance has already been recorded, use **Coder Cat: Dance!** from the Command Palette.
+
+To create a production bundle, run:
+
+```bash
+npm run package
+```
+
+To build an installable VSIX package, run:
+
+```bash
+npx @vscode/vsce package --no-dependencies
+```
+
+## Privacy
+
+Coder Cat does not collect, store, or transmit personal information. The extension displays bundled local media and does not make network requests.
 
 ## Release notes
 
-### 0.0.1
+### 0.1.1
 
-Initial cat dance.
+- Added the purple neon Coder Cat extension icon.
+- Expanded installation, usage, development, compatibility, and privacy documentation.
 
-### 0.0.2
+See [CHANGELOG.md](CHANGELOG.md) for the complete release history.
 
-Compatibility fix for VS Code versions 1.85.0 and newer.
+## Repository
 
-### 0.1.0
-
-Rename the extension and its commands to Coder Cat.
+[github.com/arashpourrahim/disco-cat](https://github.com/arashpourrahim/disco-cat)
