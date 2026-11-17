@@ -95,4 +95,4 @@ See [CHANGELOG.md](CHANGELOG.md) for the complete release history.
 
 ## Repository
 
-[github.com/arashpourrahim/disco-cat](https://github.com/arashpourrahim/disco-cat)
+[github.com/arashpourrahim/VSCode-Extention-coder-cat](https://github.com/arashpourrahim/VSCode-Extention-coder-cat)

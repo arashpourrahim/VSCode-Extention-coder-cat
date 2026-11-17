@@ -7,7 +7,7 @@
   "icon": "media/coder-cat-icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arashpourrahim/disco-cat.git"
+    "url": "https://github.com/arashpourrahim/VSCode-Extention-coder-cat.git"
   },
   "engines": {
     "vscode": "^1.85.0"
